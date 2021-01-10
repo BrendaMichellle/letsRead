@@ -45,6 +45,8 @@ button {
     2px 2px 6px 2px rgba(70, 70, 70, 0.12);
   cursor: pointer;
   border-radius: 10px;
+  appearance: none;
+  border: none;
 }
 
 /*------HOME PAGE STYLES--------*/
@@ -120,7 +122,8 @@ img {
 
 /*TITLE*/
 
-.lessons__title {
+.lessons__title,
+.letters__title {
   font-family: var(--ff-primary);
   font-weight: 200;
   font-size: var(--fs-h4);
@@ -198,4 +201,98 @@ img {
   font-size: var(--fs-h4);
   position: relative;
   bottom: 3px;
+}
+
+/*-----LETTERS LESSON PAGE STYLES--------*/
+/*CONTAINER*/
+.letters__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100vw;
+}
+
+/*TITLE*/
+.letters__title {
+  text-align: center;
+  position: relative;
+  top: 40px;
+}
+
+/*LETTER*/
+.letter,
+.letter__blends,
+.letter__cvc {
+  font-size: 20em;
+  font-family: var(--ff-secondary);
+  font-weight: 600;
+  color: var(--clr-letters);
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/*BTNS*/
+
+.control__btns {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  bottom: 110px;
+}
+
+.control__btn--left,
+.control__btn--random,
+.control__btn--right {
+  background-color: var(--clr-accent);
+  color: #303030;
+  border: none;
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h4);
+  border-radius: 15px;
+  padding: 0.5em 1em;
+  box-shadow: -2px -2px 4px 2px rgba(253, 236, 209, 0.5),
+    2px 2px 4px 2px rgba(70, 70, 70, 0.12);
+  cursor: pointer;
+}
+
+/*REWARD*/
+.reward__btn {
+  background-color: var(--clr-letters);
+  color: var(--clr-light);
+  margin: 0;
+  position: relative;
+  bottom: 80px;
+  left: 140px;
+  border-radius: 50%;
+  padding: 1.2em 1.2em;
+  box-shadow: -2px -2px 4px 2px rgba(253, 236, 209, 0.5),
+    2px 2px 4px 2px rgba(70, 70, 70, 0.12);
+  cursor: pointer;
+}
+
+/*------LETTER BLENDS STYLE----*/
+.letter__blends {
+  font-size: 19em;
+  margin-bottom: 50px;
+}
+
+/*------CVC WORDS STYLES-------*/
+.letter__cvc {
+  font-size: 10em;
+  margin-bottom: 70px;
+}
+
+.cvc__title {
+  top: -80px;
+}
+
+.word__btns {
+  bottom: 10px;
+}
+
+.reward__btn--word {
+  top: 40px;
 }
