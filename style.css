@@ -60,7 +60,7 @@ button {
 
 .home__title {
   font-family: var(--ff-primary);
-  font-size: var(--fs-h1);
+  font-size: 3rem;
   text-align: center;
   color: var(--clr-accent);
 }
@@ -76,7 +76,7 @@ img {
   color: var(--clr-light);
   border: none;
   font-family: var(--ff-secondary);
-  font-size: var(--fs-h4);
+  font-size: var(--fs-h3);
   margin-top: 40px;
   border-radius: 5px;
   padding: 0.5em 1.5em;
@@ -147,7 +147,7 @@ img {
   background-color: var(--clr-background);
   border-radius: 10px;
   margin: 0 5px 15px 5px;
-  padding: 0 5px 20px 10px;
+  padding: 0 5px 10px 25px;
   box-shadow: -2px -2px 5px 2px rgba(253, 236, 209, 0.5),
     2px 2px 6px 2px rgba(70, 70, 70, 0.12);
   cursor: pointer;
@@ -163,6 +163,25 @@ img {
   margin-top: 0px;
 }
 
+@media (min-width: 600px) {
+  .lessons__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+    flex-direction: row;
+    max-width: 1000px;
+  }
+
+  .lesson {
+    width: 320px;
+  }
+
+  .lessons__title {
+    text-align: center;
+  }
+}
+
 .lesson__desc {
   grid-area: desc;
   font-family: var(--ff-secondary);
@@ -176,6 +195,7 @@ img {
   grid-area: img;
   height: 120px;
   width: 100px;
+  justify-self: end;
 }
 
 .lesson__btn--start {
@@ -185,6 +205,7 @@ img {
   border: none;
   width: 120px;
   margin-top: -10px;
+  height: 50px;
 }
 
 .fa-caret-right {
@@ -295,4 +316,93 @@ img {
 
 .reward__btn--word {
   top: 40px;
+}
+
+/*------USER PAGE STYLES-------*/
+.user__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100vw;
+}
+
+.user__img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: relative;
+  top: -5px;
+}
+
+.user__img--select {
+  height: 160px;
+  width: 250px;
+  position: fixed;
+  top: 80px;
+  left: 40;
+  z-index: 1000;
+  border-radius: 15px;
+  border: 1px solid #6d6d6d;
+  box-shadow: -2px -2px 5px 2px rgba(253, 236, 209, 0.5),
+    2px 2px 6px 2px rgba(70, 70, 70, 0.12);
+  background-color: var(--clr-light);
+  display: none;
+}
+
+.container__display {
+  display: block;
+}
+
+.user__img--option {
+  height: 60px;
+  width: 56px;
+  border-radius: 50%;
+  margin: 0.5em 0.7em 0.5em 0.5em;
+}
+
+.sticker__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  height: 60vh;
+  width: 90vw;
+}
+
+.sticker {
+  height: 260px;
+  width: 260px;
+  margin: 3em;
+  margin-bottom: 0;
+}
+
+.reward {
+  background-color: var(--clr-letters);
+  color: var(--clr-light);
+  font-size: var(--fs-h4);
+  font-family: var(--ff-secondary);
+  padding: 0.5em 1em;
+  margin: 0.5em 0;
+  position: relative;
+  top: -2px;
+}
+
+.sticker__message {
+  font-size: var(--fs-h1);
+  color: var(--clr-letters);
+  font-family: var(--ff-secondary);
+  font-weight: 600;
+  position: relative;
+  top: -20px;
+}
+
+.user__practiceAgain {
+  color: #303030;
+  font-family: var(--ff-secondary);
+  text-decoration: underline;
+  position: relative;
+  top: -40px;
 }

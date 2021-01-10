@@ -34,7 +34,7 @@ const lessonsList = [
     link: 'lessons/sightWords.html',
     img: 'img/panda.png',
   },
-  {
+  /*{
     id: 6, 
     title: 'Pre Reader', 
     desc: 'Start reading with short one word pre readers.',
@@ -47,7 +47,7 @@ const lessonsList = [
     desc: 'Practice reading with readers.',
     link: 'lessons/reader.html',
     img: 'img/pig.png',
-  },
+  },*/
 ];
 
 const lessonsContainer = document.querySelector('.lessons__container'); 

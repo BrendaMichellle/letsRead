@@ -1,4 +1,4 @@
-const letters = ["a", "an", "at", "are", "as", "at", "and", "all", "be", "by", "but", "can", "could", "did", "down", "do", "each", "from", "first", "find", "for", "he", "his", "had", "how", "has", "her", "have", "him", "in", "I", "if", "into", "is", "it", "its", "just", "know", "like", "my", "more", "she","the", "to", "they", "this", "there", "them", "then", "these", "two", "time", "than", "that", "their", "up", "use", "was", "with", "what", "were", "when", "we", "which", "will", "would", "words", "where", "water", "who", "way", "you", "your"];
+const letters = ["a", "an", "at", "are", "as", "at", "and", "all", "be", "by", "but", "can", "did", "down", "do", "each", "from", "first", "find", "for", "he", "his", "had", "how", "has", "her", "have", "him", "in", "I", "if", "into", "is", "it", "its", "just", "know", "like", "my", "more", "she","the", "to", "they", "this", "there", "them", "then", "these", "two", "time", "than", "that", "their", "up", "use", "was", "with", "what", "were", "when", "we", "which", "will", "words", "where", "water", "who", "way", "you", "your"];
 
 
 //----SELECTORS
